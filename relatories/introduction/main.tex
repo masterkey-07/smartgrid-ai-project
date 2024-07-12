@@ -10,7 +10,7 @@
 \usepackage{setspace}
 \usepackage{times}
 
-\title{Título do Trabalho}
+\title{Predição do Estado de uma Smart Grid}
 \author{João Vínicius\\
 Victor Jorge Carvalho Chaves}
 \date{11/07/2024}
@@ -18,9 +18,6 @@ Victor Jorge Carvalho Chaves}
 \begin{document}
 
 \maketitle
-\begin{abstract}
-    Este é o resumo do trabalho, onde serão descritos de forma sucinta os principais pontos abordados.
-\end{abstract}
 
 \tableofcontents
 \newpage
@@ -48,24 +45,46 @@ Sistema de energia elétrica que se utiliza da tecnologia da informação para f
 
 A definição de redes elétricas inteligentes ainda não está completamente consolidada, mas nesse sistema devem constar os seguintes atributos
 
-\begin{enumerate}
+\begin{itemize}
     \item Sistemas de transmissão e distribuição transparentes e controláveis;
     \item Fontes de energia renovável, geração distribuída e armazenamento de energia nos dois lados do medidor;
     \item Capacidade para resposta à demanda e controle de demanda.
-\end{enumerate}
+\end{itemize}
 
 \section{Trabalhos Relacionados}
 \subsection{Harmonized and Open Energy Dataset for Modeling a Highly Renewable Brazilian Power System}
 
-Nesse trabalho é desenvolvido um conjunto de dados aberto para análise de cenários com modelos como o PyPSA.
+Nesse trabalho é desenvolvido um conjunto de dados para análise de cenários com modelos como o PyPSA.
 Esse conjunto inclui dados de séries temporais, dados geoespaciais e dados tabulares sobre usinas e demandas de energia.
 Isso facilita estudos adicionais focados na descarbonização do sistema energético brasileiro, mas pode ser auxiliar para outros estudo também.
 
+\subsection{Machine Learning Approaches To Predict The Stability of Smart Grid}
+
+Este estudo propõe um modelo de aprendizado de máquina para identificar a estabilidade da rede inteligente de forma mais eficiente.
+
+\subsection{PyPSA: Python for Power System Analysis}
+PyPSA é uma caixa de ferramentas de código aberto para simular e otimizar sistemas modernos de energia e energia que incluem recursos como geradores convencionais com compromisso de unidade, geração eólica e solar variável, unidades de armazenamento, acoplamento a outros setores de energia e redes mistas de corrente alternada e contínua.
+
 \section{Objetivo}
-De forma direta e sucinta, um parágrafo que resuma o que será feito neste trabalho.
-Descreva claramente o objetivo principal do trabalho, destacando o que será alcançado.
+
+Este trabalho propões em treinar um modelo de inteligência artificial que deverá ser capaz de categorizar e prever o estado de uma rede elétrica.
 
 \section{Metodologia Experimental}
+
+\subsection{Tecnologias e Bibliotecas}
+\begin{itemize}
+    \item Linguagem de Programação: Python
+    \item Biblioteca de Aprendizado de Máquina de IA: PyTorch
+    \item Simulador de uma Rede Elétrica: PyPSA
+\end{itemize}
+
+\subsection{Etapas do Desenvolvimento}
+\begin{enumerate}
+    \item DefiniçãoCriação de um Dataset
+    \item Treinamento e Teste de Modelos de IA
+    \item Comparação e escolha do modelo a ser usado
+    \item
+\end{enumerate}
 Quais serão os passos e técnicas/biblioteca/tecnologias em geral que serão utilizadas para que seu projeto se concretize?
 Detalhe a abordagem metodológica, os passos experimentais, as ferramentas e tecnologias que serão empregadas no desenvolvimento do projeto.
 
@@ -78,6 +97,7 @@ Explique quais serão os resultados finais, entregáveis ou produtos do seu trab
     \item Deng, Y., Cao, KK., Hu, W. et al. Harmonized and Open Energy Dataset for Modeling a Highly Renewable Brazilian Power System. Sci Data 10, 103 (2023). https://doi.org/10.1038/s41597-023-01992-9
     \item T. Brown, J. Hörsch, D. Schlachtberger, PyPSA: Python for Power System Analysis, 2018, Journal of Open Research Software, 6(1), arXiv:1707.09913, DOI:10.5334/jors.188
     \item SAP Insights. "The Smart Grid: How AI is Powering Today’s Energy Technologies." Disponível em: SAP Insights. Acesso em: 11 jul. 2024.
+    \item Satu, Md \& Khan, Md. Imran. (2024). Machine Learning Approaches To Predict The Stability of Smart Grid. 10.21203/rs.3.rs-3866218/v1.
+    \item Y. Deng, "PyPSA-Brazil: A Free and Open Model of the Brazilian Electrical System," in Energy Proceedings, 2021.
 \end{itemize}
-++
 \end{document}
