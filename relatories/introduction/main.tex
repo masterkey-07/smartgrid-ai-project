@@ -11,8 +11,8 @@
 \usepackage{times}
 
 \title{Predição do Estado de uma Smart Grid}
-\author{João Vínicius\\
-Victor Jorge Carvalho Chaves}
+\author{João Vinicius Farah Colombini 159501\\
+Victor Jorge Carvalho Chaves 156740}
 \date{11/07/2024}
 
 \begin{document}
@@ -51,6 +51,10 @@ A definição de redes elétricas inteligentes ainda não está completamente co
     \item Capacidade para resposta à demanda e controle de demanda.
 \end{itemize}
 
+\subsection{PyPSA: Python for Power System Analysis}
+PyPSA é uma biblioteca de código aberto para simular e otimizar sistemas modernos de energia e energia que incluem recursos como geradores convencionais com compromisso de unidade, geração eólica e solar variável, unidades de armazenamento, acoplamento a outros setores de energia e redes mistas de corrente alternada e contínua.
+
+
 \section{Trabalhos Relacionados}
 \subsection{Harmonized and Open Energy Dataset for Modeling a Highly Renewable Brazilian Power System}
 
@@ -62,35 +66,46 @@ Isso facilita estudos adicionais focados na descarbonização do sistema energé
 
 Este estudo propõe um modelo de aprendizado de máquina para identificar a estabilidade da rede inteligente de forma mais eficiente.
 
-\subsection{PyPSA: Python for Power System Analysis}
-PyPSA é uma caixa de ferramentas de código aberto para simular e otimizar sistemas modernos de energia e energia que incluem recursos como geradores convencionais com compromisso de unidade, geração eólica e solar variável, unidades de armazenamento, acoplamento a outros setores de energia e redes mistas de corrente alternada e contínua.
+\subsection{A multi-scale time-series dataset with benchmark for machine learning in decarbonized energy grids}
+
+É um banco de dados gerado a partir de dados reais, e utiliza de séries temporais para isso. O processo pode ser descrito em três partes, a primeira é a coleta e geração de dados de carga e energia renovável, a segunda é Energia, voltagem e geração de dados e portanto a ultima é fundamentada em comparações de modelos de machine learning para atividades chave.
 
 \section{Objetivo}
 
-Este trabalho propões em treinar um modelo de inteligência artificial que deverá ser capaz de categorizar e prever o estado de uma rede elétrica.
+Este trabalho propões em treinar diversos modelos de inteligência artificial para conseguir chegar em um modelo ótimo que deverá ser capaz de categorizar e prever o estado de uma rede elétrica com o objetivo final de otimização energética.
 
 \section{Metodologia Experimental}
 
 \subsection{Tecnologias e Bibliotecas}
 \begin{itemize}
     \item Linguagem de Programação: Python
-    \item Biblioteca de Aprendizado de Máquina de IA: PyTorch
+    \item Biblioteca de Aprendizado de Máquina de IA: Scikit-learn, PyTorch
     \item Simulador de uma Rede Elétrica: PyPSA
 \end{itemize}
 
 \subsection{Etapas do Desenvolvimento}
 \begin{enumerate}
-    \item DefiniçãoCriação de um Dataset
-    \item Treinamento e Teste de Modelos de IA
-    \item Comparação e escolha do modelo a ser usado
-    \item
+    \item Definição e Criação de um Dataset usando PyPSA
+    \item Pré Processamento dos Dados e Geração de Dados
+    \item Treinamento e Teste de Modelos de IA de Regressão \begin{enumerate}
+              \item Random Forests para regressão;
+              \item Regressão linear;
+              \item Árvores de decisão para regressão.
+          \end{enumerate}
+    \item Treinamento e Teste de Modelos de IA de Classificação \begin{enumerate}
+              \item Arvore de Decisão;
+              \item K-nearest neighbors;
+              \item Árvores de decisão para regressão.
+          \end{enumerate}
+    \item Comparação e escolha do modelo a ser usado em cada caso.
+    \item Buscar a possibilidade de fine tuning dos modelos achados para aplicar em outros desafios de mesmo domínio.
 \end{enumerate}
-Quais serão os passos e técnicas/biblioteca/tecnologias em geral que serão utilizadas para que seu projeto se concretize?
-Detalhe a abordagem metodológica, os passos experimentais, as ferramentas e tecnologias que serão empregadas no desenvolvimento do projeto.
 
-\section{O que será entregue no final?}
-Esta parte é a mais importante, pois será a sua promessa de projeto e portanto, ela quem guiará sua nota final.
-Explique quais serão os resultados finais, entregáveis ou produtos do seu trabalho, e como eles serão apresentados.
+\section{Entregáveis do Projeto}
+
+O projeto visa desenvolver um modelo de inteligência artificial treinado com dados de redes elétricas, capaz de categorizar (classificação, dados discretos) e prever (regressão, dados continuos) o estado dessas redes com alta precisão.
+
+Além disso, será feito a tentativa de adaptar o modelo para enfrentar outros desafios na área de Smart Grid, promovendo melhorias na eficiência, segurança e gestão dessas redes inteligentes.
 
 \section{Referências Bibliográficas}
 \begin{itemize}
@@ -99,5 +114,6 @@ Explique quais serão os resultados finais, entregáveis ou produtos do seu trab
     \item SAP Insights. "The Smart Grid: How AI is Powering Today’s Energy Technologies." Disponível em: SAP Insights. Acesso em: 11 jul. 2024.
     \item Satu, Md \& Khan, Md. Imran. (2024). Machine Learning Approaches To Predict The Stability of Smart Grid. 10.21203/rs.3.rs-3866218/v1.
     \item Y. Deng, "PyPSA-Brazil: A Free and Open Model of the Brazilian Electrical System," in Energy Proceedings, 2021.
+    \item Zheng, X., Xu, N., Trinh, L. et al. A multi-scale time-series dataset with benchmark for machine learning in decarbonized energy grids. Sci Data 9, 359 (2022). https://doi.org/10.1038/s41597-022-01455-7
 \end{itemize}
 \end{document}
