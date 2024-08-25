@@ -15,10 +15,12 @@ joblib==1.4.2
 jupyter_client==8.6.2
 jupyter_core==5.7.2
 kiwisolver==1.4.5
+lightgbm==4.5.0
 matplotlib==3.9.2
 matplotlib-inline==0.1.7
 nest-asyncio==1.6.0
 numpy==2.0.1
+nvidia-nccl-cu12==2.22.3
 packaging==24.1
 pandas==2.2.2
 parso==0.8.4
@@ -36,6 +38,7 @@ pytz==2024.1
 pyzmq==26.1.0
 scikit-learn==1.5.1
 scipy==1.14.0
+seaborn==0.13.2
 six==1.16.0
 stack-data==0.6.3
 threadpoolctl==3.5.0
@@ -44,4 +47,4 @@ traitlets==5.14.3
 tzdata==2024.1
 ucimlrepo==0.0.7
 wcwidth==0.2.13
-xgboost
+xgboost==2.1.1
